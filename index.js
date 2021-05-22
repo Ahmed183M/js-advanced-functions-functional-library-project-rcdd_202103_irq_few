@@ -62,9 +62,42 @@ const fi = (function() {
       },
       
       sortBy: function(collection, callback){
+<<<<<<< HEAD
         let newArray = Object.values(collection);
         return newArray.sort(function(a, b){return a - b});
       },
   }
 })()
 
+=======
+        let newArray = callback(collection);
+        console.log(newArray.sort(function(a, b){return a - b}))
+        return newArray.sort(function(a, b){return a - b});
+      },
+      
+      // filter: function(collection, callback){
+      //   return Object.values(collection).filter(callback);
+      // },
+      
+      // filter: function(collection, callback){
+      //   return Object.values(collection).filter(callback);
+      // },
+      
+      // filter: function(collection, callback){
+      //   return Object.values(collection).filter(callback);
+      // },
+      
+      // filter: function(collection, callback){
+      //   return Object.values(collection).filter(callback);
+      // },
+      
+      // filter: function(collection, callback){
+      //   return Object.values(collection).filter(callback);
+      // },
+
+
+  }
+})()
+
+fi.sortBy([3, 8, 5, 1, 9, 11, 8]);
+>>>>>>> 29bfec76e2ceec8ce1969cf2670d16bf09da6112
